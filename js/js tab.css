@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.container .header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container .header .tab {
+    float: left;
+    padding: 5px 20px;
+    border-left: 1px solid slategray;
+    border-top: 1px solid slategray;
+    text-align: center;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.container .header .tab:last-child {
+    border-right: 1px solid slategray;
+}
+
+.container .header .tab.active {
+    background-color: rgba(0,0,0,0.1)
+}
+
+.container .panel-ct .panel {
+    display: none;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid slategray;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.container .panel-ct .panel.active {
+    display: block;
+}
